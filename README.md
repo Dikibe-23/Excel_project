@@ -3,7 +3,9 @@
 ## About the project
 The aim of this project is to perform sales analysis with the aid of MS Excel. The data set provided in the current repository.
 
-- <b> Coffee Sales Dashboard
+<b> Coffee Sales Dashboard</b>
+
+![Coffee Sales Dashboard](https://github.com/user-attachments/assets/7596bbac-2b99-4718-8e1a-c0700c3e128c)
 
 
 ## Table of Contents
