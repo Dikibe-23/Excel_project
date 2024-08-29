@@ -3,6 +3,9 @@
 ## About the project
 The aim of this project is to perform sales analysis with the aid of MS Excel. The data set provided in the current repository.
 
+- <b> Coffee Sales Dashboard
+
+
 ## Table of Contents
 1. [About the project.](#About-the-project)
 2. [KPI.](#KPIs)
