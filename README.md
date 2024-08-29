@@ -22,14 +22,14 @@ The aim of this project is to perform sales analysis with the aid of MS Excel. T
 ## Steps
 1. <b>Data Connection:</b> First, we connect to our data source or database and perform data ETL or ELT with the aid of SQL to MS Excel.
 2.	<b>Data Cleaning:</b> In this step, we identify features of interest, deal with missing data points, perform data quality checks and populated the ‘Orders’ table with entries from the ‘Customer’ and ‘Products’ table.
--- Formular Used.
-  	```
+3.	<b>Dashboarding/Insight Generation:</b> In this step, we visualized some KPIs of the business from the data in order to generate insights and have an overview of the business performance.
+
+## Formula used
+```
    =IF(XLOOKUP([@[Customer ID]];customers!$A$2:$A$1001;customers!$C$2:$C$1001;;0)=0;"";XLOOKUP([@[Customer ID]];customers!$A$2:$A$1001;customers!$C$2:$C$1001;;0))
    =INDEX(products!$A$1:$G$49;MATCH(orders!$D3;products!$A$1:$A$49;0);MATCH(orders!I$1;products!$A$1:$G$1;0))
    
-   ```
-4.	<b>Dashboarding/Insight Generation:</b> In this step, we visualized some KPIs of the business from the data in order to generate insights and have an overview of the business performance.
-
+```
 ## Insights
 
 1.	Between year 2019 and 2020, coffee type Excelsa and Arabica were the most sold coffee type.
