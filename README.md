@@ -5,12 +5,12 @@ The aim of this project is to perform sales analysis with the aid of MS Excel. T
 
 ## Table of Contents
 1. [About the project.](#About-the-project)
-2. [KPI.](#kpi)
+2. [KPI.](#KPIs)
 3. [Tool.](#tools)
 4. [Steps.](#steps)
 5. [Insights.](#insights)
 
-## Kpi
+## KPIs
 1. YoY and MoM Sales.
 2. Customers with the most purchases.
 3. Country with the most patronage.
@@ -19,13 +19,16 @@ The aim of this project is to perform sales analysis with the aid of MS Excel. T
 ## Tools
 1. MS Excel.
 
-### Excel Formular
-
-
 ## Steps
 1. <b>Data Connection:</b> First, we connect to our data source or database and perform data ETL or ELT with the aid of SQL to MS Excel.
 2.	<b>Data Cleaning:</b> In this step, we identify features of interest, deal with missing data points, perform data quality checks and populated the ‘Orders’ table with entries from the ‘Customer’ and ‘Products’ table.
-3.	<b>Dashboarding/Insight Generation:</b> In this step, we visualized some KPIs of the business from the data in order to generate insights and have an overview of the business performance.
+-- Formular Used.
+  	```
+   =IF(XLOOKUP([@[Customer ID]];customers!$A$2:$A$1001;customers!$C$2:$C$1001;;0)=0;"";XLOOKUP([@[Customer ID]];customers!$A$2:$A$1001;customers!$C$2:$C$1001;;0))
+   =INDEX(products!$A$1:$G$49;MATCH(orders!$D3;products!$A$1:$A$49;0);MATCH(orders!I$1;products!$A$1:$G$1;0))
+   
+   ```
+4.	<b>Dashboarding/Insight Generation:</b> In this step, we visualized some KPIs of the business from the data in order to generate insights and have an overview of the business performance.
 
 ## Insights
 
